@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dela+Gothic+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Carl's Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript"> google.charts.load('current', {packages: ['corechart', 'bar']});
+      google.charts.setOnLoadCallback(drawBasic);
+      
+      function drawBasic() {
+      
+            var data = google.visualization.arrayToDataTable([
+              ['Skill Set', 'My Skills',],
+              ['Python Programming', 730],
+              ['MySQL', 365],
+              ['Excel', 263],
+              ['Machine Learning', 500],
+              ['Math and Statistics', 730],
+              ['Finance and Economics', 715],
+              ['Web Development', 152]
+
+            ]);
+      
+            var options = {
+              title: 'Days of honing the skills',
+              chartArea: {width: '50%'},
+              hAxis: {
+                title: 'Days of Learning',
+                minValue: 0
+              },
+              vAxis: {
+                title: 'Skill Name'
+              }
+            };
+      
+            var chart = new google.visualization.BarChart(document.getElementById('barchart_values'));
+      
+            chart.draw(data, options);
+          }</script>
+          <script type="text/javascript">
+            google.charts.load("current", {packages:["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+                ['Course', 'Percentage'],
+                ['Programming',     0.4],
+                ['Math',      0.3],
+                ['Database',  0.1],
+                ['Finance and Economics', 0.05],
+                ['Web Development',  0.15]
+              ]);
+      
+              var options = {
+                title: 'Skills Percentage',
+                pieHole: 0.4,
+              };
+      
+              var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+              chart.draw(data, options);
+            }
+          </script>
+</head>
+<body>
+    <nav class="navbar border-bottom border-body" style="background-color: #EAD7BB;">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="text-align: center; color: white; font-family: 'Bitter', serif; font-weight: 800;">Morada's Website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" style="font-family: 'Bitter', serif; font-weight: 800;">moradacarlito@gmail.com</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true" style="font-family: 'Bitter', serif; font-weight: 800;">moradacarl2710@outlook.com</a>
+            </li>
+          </ul>
+      </nav>
+    <div class="container">
+        <div class="box1">
+            <div class="aboutme"><div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="gif1" style="background-color: green; width: 100px; height: 100px; position: 
+                    absolute; left: 440px; top: 30px; background-image: url('./static/skills/skill1.gif');"></div>
+                    <img src="./static/skills/skill1.svg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <div class="gif1" style="background-color: green; width: 100px; height: 100px; position: 
+                    absolute; left: 440px; top: 30px; background-image: url('./static/skills/skill2.gif');"></div>
+                    <img src="./static/skills/skill2.svg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <div class="gif1" style="background-color: green; width: 100px; height: 100px; position: 
+                    absolute; left: 440px; top: 30px; background-image: url('./static/skills/skill3.gif');"></div>
+                    <img src="./static/skills/skill3.svg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </div>
+        <div class="box2">
+          <div class="picskills">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./static/skills2/skill1.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./static/skills2/skill2.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./static/skills2/skill3.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./static/skills2/skill4.svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+          <div class = "shortpara" style="background-image: url('./static/skills2/me.svg');"></div>
+            </div>
+            <div class="box3">
+              <div class="one">
+                <div class="text1" data-aos="flip-up">Relevant Skills</div>
+                <div class="text2" data-aos="flip-up">Where I'd Learn it.</div>
+              </div>
+              <div class="two">
+                <div class="para1" data-aos = "slide-right"><img src="./static/skill3/excel.svg" alt=""></div>
+                <div class="img1" data-aos = "slide-up"><img src="./static/skill3/pic1.svg" alt=""></div>
+              </div>
+              <div class="three">
+                <div class="para1" data-aos = "slide-right"><img src="./static/skill3/sql.svg" alt=""></div>
+                <div class="img1" data-aos = "slide-up"><img src="./static/skill3/pic2.svg" alt=""></div>
+              </div>
+              <div class="four">
+                <div class="para1" data-aos = "slide-right"><img src="./static/skill3/python.svg" alt=""></div>
+                <div class="img1" data-aos = "slide-up"><img src="./static/skill3/pic3.svg" alt=""></div>
+              </div>
+              <div class="five">
+                <div class="para1" data-aos = "slide-right"><img src="./static/skill3/web.svg" alt=""></div>
+                <div class="img1" data-aos = "slide-up"><img src="./static/skill3/pic4.svg" alt=""></div>
+              </div>
+              <div class="six">
+                <div class="para1" data-aos = "slide-right"><img src="./static/skill3/deep.svg" alt=""></div>
+                <div class="img1" data-aos = "slide-up"><img src="./static/skill3/pic5.svg" alt=""></div>
+              </div>
+            </div>
+        <div class="box4">
+          <div class="title2" data-aos="slide-right">Projects</div>
+          <div class="full">
+            <div class="myone" data-aos="slide-right"><div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <video src="./static/pics/vid1.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Heart Disease Prediction</h5>
+                    <p>Machine Learning Project</p>
+                    <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/machine-learning-projects/blob/main/Heart%20Disease/End-to-End-HeartDisease-Classification.ipynb" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video src="./static/pics/vid2.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>House Prediction</h5>
+                    <p>Machine Learning Project</p>
+                    <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/machine-learning-projects/blob/main/HousingPrediction/End-to-End-HousePrediction.ipynb" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video src="./static/pics/vid3.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Stock Prediction</h5>
+                    <p>Machine Learning Project</p>
+                    <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/machine-learning-projects/blob/main/Accenture%20Stock%20Predictions/AccentureStockForcasting.ipynb" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video src="./static/pics/vid4.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Face Recognition</h5>
+                    <p>Thesis Development</p>
+                    <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/thesisproject/blob/main/FaceRecognition_Final%20(2).py" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video src="./static/pics/vid5.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Snake Game</h5>
+                    <p>Game Development Project</p>
+                    <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/python-projects/tree/main/Bigprojects/Snakes" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video src="./static/pics/vid6.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Style Vogue Website</h5>
+                    <p>Web Development Project</p>
+                    <button type="button" class="btn btn-primary"><a href="https://carlmathew.github.io/html-portfolio1/" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video src="./static/pics/vid7.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pong Game</h5>
+                    <p>Game Development Project</p>
+                    <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/python-projects/tree/main/Bigprojects/PongGame" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video src="./static/pics/vid8.mp4" autoplay muted loop></video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Onlie Art Website</h5>
+                    <p>Web Development Project</p>
+                    <button type="button" class="btn btn-primary"><a href="https://online-art-tutorial.onrender.com/?fbclid=IwAR0t8b70Yd3CaZi5fpt84w7YncCUiYhtuC3T7jFsp1Q4_T6tGEGBahHlTnU" style="text-decoration: none; color: white;">See More</a></button>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div></div>
+            <div class="mytwo" data-aos="slide-down">
+              <div class="two1">
+                <div id="carouselExampleCaptions1" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./static/projects/pic1.svg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Password Generator</h5>
+                        <p>GUI Project</p>
+                        <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/python-projects/blob/main/Small%20Projects/Password_Generator/password_gen.py" style="text-decoration: none; color: white;">See More</a></button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./static/projects/pic2.svg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Stock News Messenger</h5>
+                        <p>API Project</p>
+                        <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/python-projects/blob/main/Small%20Projects/Stock%20Price%20App/StockPriceAPI.py" style="text-decoration: none; color: white;">See More</a></button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./static/projects/pic3.svg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Weather Alert</h5>
+                        <p>API Project</p>
+                        <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/python-projects/blob/main/Small%20Projects/Weather_Api/weather.py" style="text-decoration: none; color: white;">See More</a></button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./static/projects/pic4.svg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Birthday Alert</h5>
+                        <p>Automatic Email Sender</p>
+                        <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/python-projects/tree/main/Small%20Projects/Email%20Sender" style="text-decoration: none; color: white;">See More</a></button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./static/projects/pic5.svg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Quiz App</h5>
+                        <p>GUI Project</p>
+                        <button type="button" class="btn btn-primary"><a href="https://github.com/CarlMathew/python-projects/blob/main/Small%20Projects/quiz_app/quizgame.py" style="text-decoration: none; color: white;">See More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+              </div>
+              <div class="two2" data-aos="slide-down"><div id="carouselExampleCaptions2" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./static/online/online1.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-primary"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" style="text-decoration: none; color: white;">Course 1</a></button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./static/online/online2.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-primary"><a href="https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/" style="text-decoration: none; color: white;">Course 2</a></button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./static/online/online3.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-primary"><a href="https://www.udemy.com/course/100-days-of-code/" style="text-decoration: none; color: white;">Course 3</a></button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./static/online/online4.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-primary"><a href="" style="text-decoration: none; color: white;">Course 4</a></button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./static/online/online5.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-primary"><a href="https://www.udemy.com/course/calculus-2/" style="text-decoration: none; color: white;">Course 5</a></button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./static/online/online6.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <button type="button" class="btn btn-primary"><a href="https://www.udemy.com/course/deeplearning_x/learn/lecture/27844192?start=540#notes" style="text-decoration: none; color: white;">Course 6</a></button>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div></div>
+            </div>
+          </div>
+        </div>
+        <div class="box5">
+          <div class="title2" style= "background-color: black;" data-aos="slide-right">Skills Analyzation</div>
+          <div class = "charts">
+            <div id="barchart_values" style="width: 600px; height: 450px;" data-aos="slide-up"> </div>
+            <div id="donutchart" style="width: 600px; height: 450px;" data-aos="slide-up"></div>
+          </div>
+        </div>
+        <div class="box6">
+          <div class="explain1" data-aos="slide-up">
+            <div class="tt1"><h2 style="text-align: center; position: relative; 
+            top: 20px; font-family: 'Dela Gothic One', cursive; text-decoration: underline; font-size: 25pt;">Days of honing my skills</h2></div>
+            <div class="xplain1"><p style="font-family: 'Bitter', serif; font-weight: 800;">I've been self-studying programming, mathematics, web development, etc. for almost 2 years now. 
+              The bar chart above represents how many days I've studied every individual skill.</p>
+            <ul style="font-family: 'Bitter', serif; font-weight: 800;">
+              <li>Python Programming: 2 years and continuing</li>
+              <li>MySQL: 1 year and continuing</li>
+              <li>Excel: Almost 8 months</li>
+              <li>Machine Learning: Almost 1 year and a half and still continuing</li>
+              <li>Math and Statistics: 2 years and continuing</li>
+              <li>Finance and Economics: Almost 2 years and continuing</li>
+              <li>Web Development: 5 months and continuing</li>
+            </ul>
+            <p style="font-family: 'Bitter', serif; font-weight: 800;">Furthermore, the learning will never stop; therefore, my years of experience will increase, and I will continue to grow, adapt new things in the programming world, and my goal is to master all of the skill that was placed on the chart.</p>
+          </div>
+          </div>
+          <div class="explain2" data-aos="slide-up">
+            <div class="tt1" ><h2 style="text-align: center; position: relative; 
+              top: 20px; font-family: 'Dela Gothic One', cursive; text-decoration: underline; font-size: 25pt;">Skills Percentage</h2></div>
+            <div class="xplain1"><p style="font-family: 'Bitter', serif; font-weight: 800; text-align: justify;">The pie chart presented illustrates my current interest distribution across various skills. Programming commands the largest share at 40%, driven by the excitement I derive from its challenging nature, particularly when tackling intricate problems. Math closely follows at 30%, with its problem-solving aspects providing a similar sense of satisfaction. Web development, at 20%, has recently become a focus, enhancing my creativity skills and offering room for deeper exploration. Database management occupies 10%, primarily due to its utility in handling large datasets efficiently. Finance and economics, at 5%, are important for future endeavors like starting a business or investing but currently hold a lower priority in my skill development journey. These percentages reflect my present interests, which may evolve as I continue to learn and grow in these fields.</p></div>
+          </div>
+
+        </div>
+        <div class="box7">
+          <div class="info1">
+            <div class="media1"><a href="https://www.facebook.com/CarlitoMorada/"> <img src="./static/links/fb.svg" alt=""></a></div>
+            <div class="media2"><a href="https://github.com/CarlMathew"> <img src="./static/links/git.svg" alt=""></a></div>
+            <div class="media3"><a href="www.linkedin.com/in/carlito-morada-600353233"> <img src="./static/links/linkend.svg" alt=""></a></div>
+          </div>
+          <div class="myname"><a href=""><video src="./static/links/name.mp4" autoplay loop muted></video></a></div>
+          <div class="info3">
+            <footer style="color: white;">Copyright © 2023 MORADA</footer>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
